@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/* * {
+    margin: 0;
+} */
+
+body {
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #0f141e;
+    background-color: #f1f1f1;
+    margin: 10px 20px;
+}
+
+a {
+    color: #334465;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #775577;
+}
+
+a:hover {
+    color: #b785b7;
+}
+
+.btn {
+    background-color: #775577;
+    color: #f6f9f9;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.btn:hover {
+    opacity: .8;
+}
+
+.container {
+    margin: auto;
+    max-width: 800px;
+    padding-top: 20px;
+}
+
+.avatar {
+    border-radius: 5px;
+    width: 250px;
+    height: 100%;
+    /* display: block; если нужно добавить margin: auto; */
+
+}
+
+.avatar-info {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.info-text {
+    margin-bottom: 20px;
+}
+
+.info-text p {
+    font-size: larger;
+    font-style: italic;
+    margin: 0;
+}
+
+.info-text h1, h2 {
+    color: #775577;
+    margin-bottom: 20px;
+}
+
+.info-text h4 {
+    margin-bottom: 10px;
+}
+
+.card {
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.card:nth-child(5) {
+    margin-bottom: 0;
+}
+
+.bg-blue {
+    background-color: #91e1f7;
+}
+
+.bg-pink {
+    
+    background-color: #d9a5f7;
+}
+
+.bg-green {
+    background-color: #b5f49f;
+}
+
+.bg-grey {
+    background-color: #d2d2d2;
+}
+
+.list {
+  margin: 0;
+  padding: 0 20px;
+}
+
+.list li {
+    padding-bottom: 5px;
+}
+
+.table td {
+    padding-bottom: 5px;
+    padding-right: 15px;
+}
+
+.table td:nth-child(2), td:nth-child(3) {
+    color: #806e8a;
+}
+
+.link-list {
+    padding: 0;
+}
+
+.link-list li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.name-email {
+    display: flex;
+    margin-bottom: 15px;
+    gap: 30px;
+}
+.contact-form div:nth-child(2) {
+    margin-bottom: 15px;
+} 
+
+.contact-form input, textarea {
+    margin-top: 10px;
+    padding: 5px;
+    background-color: #d2d2d2;
+    border: none;
+    border-bottom: 2px solid #a5a5a5;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+.name-email div {
+    width: 100%;
+}
+
+input:focus {
+    outline: none;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+@media (max-width: 500px) {
+    .avatar {
+        margin: auto;
+    }
+
+    .avatar-info {
+        flex-wrap: wrap;
+        padding-left: 15px;
+    }
+
+    .avatar-info h1 {
+        text-align: center;
+    }
+}

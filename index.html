@@ -7,79 +7,137 @@
     <meta name="keywords" content="irina borisova, full stack, frontend, backend, HTML, CSS, JavaScript, resume, cv">
     <meta name="description" content="Full stack resume web-site of Irina Borisova">
     <title>Irina Borisova's Resume</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
-    <img src="images/Photo Irina Borisova.jpg" width="200" alt="">
-    
-    <h1>Irina Borisova</h1>
-    
-    <p>I am a Junior Web Developer. I created websites on <strong>Astro</strong> and <strong>Ruby on Rails</strong>.</p>
-    <p>I like <em>travelling and teaching Russian.</em></p>
-   
-    <a href="https://www.instagram.com/birinaale/" target="_blank">Instagram</a>
-    <a href="https://www.facebook.com/irina.borisova.754/" target="_blank">Facebook</a>
-    <a href="https://www.etsy.com/shop/BirinaArt" target="_blank">Etsy</a>
-    
-    <h2>My hobbies</h2>
-    <ol>
-        <li>Painting</li>
-        <li>Dancing</li>
-        <li>Learning languages</li>
-        <li>Playing board games</li>
-    </ol>
-
-    <h2>Опыт работы</h2>
-
-    <table width="600">
-        <thead>
-            <tr>
-                <th>Название</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
-        </thead>
-        <tr>
-            <td>LabInTech</td>
-            <td>Logistics Specialist</td>
-            <td>2006 - 2006</td>
-        </tr>
-        <tr>
-            <td>Bost Holdings</td>
-            <td>Logistics Specialist</td>
-            <td>2007 - 2008</td>
-        </tr>
-        <tr>
-            <td>Teacher of Russian as a Foreign Language</td>
-            <td>Self emloyed</td>
-            <td>2012 - сейчас</td>
-        </tr>
-        <tr>
-            <td>Freelance</td>
-            <td>Web Developer</td>
-            <td>2023 - сейчас</td>
-        </tr>
-    </table>
-
-    <h2>Связаться со мной</h2>
-    <form>
-        <div>
-            <label for="text">Ваше имя:</label>
-            <input type="text" id="text">
+    <div class="container">        
+        <div class="avatar-info">
+            <img src="images/Photo Irina Borisova.jpg" class="avatar" alt="">
+        
+            <div class="info-text">
+                <h1>Irina Borisova</h1>
+                
+                <p>I am a Junior Web Developer. I created websites on <strong>Astro</strong> and <strong>Ruby on Rails</strong>.</p>
+                <p>I like <em>travelling and teaching Russian.</em></p>
+                
+                <h4>Social networks:</h4>
+                <a href="https://www.instagram.com/birinaale/" target="_blank">Instagram</a>
+                |
+                <a href="https://www.facebook.com/irina.borisova.754/" target="_blank">Facebook</a>
+                |
+                <a href="https://www.etsy.com/shop/BirinaArt" target="_blank">Etsy</a>
+            </div>
         </div>
-        <div>
-            <label for="email">Ваше email:</label>
-            <input type="email" id="email">
+        
+        <div class="card bg-blue">
+            <h2>My hobbies</h2>
+            <ol class="list">
+                <li>Painting</li>
+                <li>Dancing</li>
+                <li>Learning languages</li>
+                <li>Playing board games</li>
+            </ol>
         </div>
-        <div>
-            <label for="email">Ваше email:</label>
-            <textarea type="email" id="email"></textarea>
-        </div>
-        <div>
-            <button type="submit">Отправить!</button>
-        </div>
-    </form>
-    
+        
+        <div class="card bg-pink">
+            <h2>Experience</h2>
 
+            <table class="table">
+                <!-- <thead>
+                    <tr>
+                        <th>Company</th>
+                        <th>Position</th>
+                        <th>Year</th>
+                    </tr>
+                </thead> -->
+                <tr>
+                    <td>LabInTech</td>
+                    <td>Logistics Specialist</td>
+                    <td>2006 - 2006</td>
+                </tr>
+                <tr>
+                    <td>Bost Holdings</td>
+                    <td>Logistics Specialist</td>
+                    <td>2007 - 2008</td>
+                </tr>
+                <tr>
+                    <td>Self emloyed</td>
+                    <td>Teacher of Russian as a Foreign Language</td>
+                    <td>2012 - present</td>
+                </tr>
+                <tr>
+                    <td>Freelance</td>
+                    <td>Web Developer</td>
+                    <td>2023 - present</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="card bg-green">
+            <h2>My projects</h2>
+            <ul class="link-list">
+                <li><a href="https://www.vitalena.ch" target="_blank">VitaLena</a></li>
+                <li><a href="https://swisshikefinder.herokuapp.com/hikes" target="_blank">Hike Finder</a></li>
+                <li><a href="https://rent4hike.herokuapp.com/" target="_blank">Rent 4 Hike</a></li>
+            </ul>
+        </div>
+        
+        <div class="card bg-grey">
+            <h2>Contact me</h2>
+            <form class="contact-form">
+                <div class="name-email">
+                    <div>
+                        <label for="text">Your name:</label>
+                        <div>
+                            <input type="text" id="text" placeholder="Type your name">
+                        </div>
+                        
+                    </div>
+                    <div>
+                        <label for="email">Your email:</label>
+                        <div>
+                            <input type="email" id="email" placeholder="Type your email">
+                        </div>
+                       
+                    </div>
+                </div>
+                
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea type="text" id="message" placeholder="Type your message..."></textarea>
+                </div>
+                <div>
+                    <button type="submit" class="btn">Send!</button>
+                </div>
+            </form>
+        </div>
+        <!-- <div class="units">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Unit</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>em</td>
+                    <td>Relative to the font-size of the element (2em means 2 times the size of the current font)</td>
+                </tr>
+                <tr>
+                    <td>rem</td>
+                    <td>Relative to font-size of the root element</td>
+                </tr>
+                <tr>
+                    <td>vw</td>
+                    <td>Relative to 1% of the width of the viewport*</td>
+                </tr>
+                <tr>
+                    <td>vh</td>
+                    <td>Relative to 1% of the height of the viewport*</td>
+                </tr>
+
+            </table>
+        </div> -->
+    </div>
 </body>
 </html>
